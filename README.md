@@ -1,15 +1,15 @@
-# owa-honeypot
+# OWA-honeypot
 A basic flask based Outlook Web Honey pot
 
 ![](docs/OWA_honeypot_1.png)
 
-## why?
+## Why?
 Most corps have some form of OWA and I couldn't find an out of the box OWA only honeypot (I'm sure if I spent more than 2 minutes googling I probably would have found one) and I wanted to mess around with some ideas I have. So I spent some time putting this together, maybe it could help someone else :)
 
-## requirements
+## Requirements
 python3 + flask
 
-## how to install
+## How to install
 git clone https://github.com/joda32/owa-honeypot.git
 cd owa-honeypot
 python3 -m venv env
