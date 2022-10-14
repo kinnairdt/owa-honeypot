@@ -1,7 +1,6 @@
 import os
 import json
 import logging
-#from pyOpenSSL import ssl
 from functools import wraps
 from flask import Flask, redirect, render_template, request, send_from_directory, Response, make_response
 
@@ -10,7 +9,6 @@ logger = logging.getLogger('honeypot')
 logger.setLevel(logging.DEBUG)
 fh = logging.FileHandler(log_file)
 fh.setLevel(logging.DEBUG)
-static = '/home/tkinnaird/honeypot/owa-honeypot'
 # create formatter and add it to the handlers
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fh.setFormatter(formatter)
