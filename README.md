@@ -16,12 +16,12 @@ python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 
+## Running in HTTPS 
+I have this currently running behind an NGINX proxy serving HTTPS with Lets Encrypt. Setup instructions / examples can be found here https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04 
+
 python owa_pot.py
 
-## here be dragons!
-In the code I basically start the flask dev server on port 80, that is a really bad idea if you want to run it on the internet. I have a todo to change that. :)
 
-Anyway, it did work for what I wanted. I've added a crude write up here (https://joda32.github.io/2019/06/11/owa-plus-pastebin.html)
 
 ![](docs/OWA_honeypot_2.png)
 ![](docs/OWA_honeypot_3.png)
